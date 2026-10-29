@@ -3,7 +3,7 @@ import './style.css';
 const addBtn = document.querySelector(".add");
 const priority = document.querySelector("#priority");
 const datepicker = document.querySelector("#datepicker");
-addBtn.addEventListener("click", () => { addTodo() });
+// addBtn.addEventListener("click", () => { addTodo() });
 
 const TODOS = [];
 

@@ -7,7 +7,34 @@
     <script src="index.js" defer></script>
 </head>
 <body>
-    <button class="add">ADD</button>
+    <div class="wrapper">
+        <div id="sidebar">
+            <h1 id="sidebar-title">>todo.odin</h1>
+            <div class="subtext">~/home
+                <p class="sidebar-project">all</p>
+                <p class="sidebar-project">today</p>
+                <p class="sidebar-project">next 7 days</p>
+                <p class="sidebar-project">important</p>
+            </div>
+            
+            <div class="subtext">~/projects
+                <p class="sidebar-project">hello</p>
+                <p class="sidebar-project">world</p>
+            </div>
+            
+        </div>
+        
+        <div id="info">
+            <div id="info-header">
+                <h1 id="info-title">all</h1>
+                <button class="add">add todo</button>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <!-- <button class="add">ADD</button>
     <label for="priority">Priority:</label>
     <select id="priority" name="priority">
         <option value="low">Low</option>
@@ -15,6 +42,6 @@
         <option value="high">High</option>
     </select>
     <label for="datepicker">Choose a date:</label>
-    <input type="date" id="datepicker" name="trip-start">
+    <input type="date" id="datepicker" name="trip-start"> -->
 </body>
 </html>

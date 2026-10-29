@@ -1,5 +1,23 @@
+:root {
+    --font-mono: "JetBrains Mono", "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    --font-sans: "Space Grotesk", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --bg-color: #0d1117;
+    --title-color: #3fb950;
+    --sidebar-selected: #12261A;
+    --todo-selected: #12261A;
+    --border-color: #373738;
+    --primary-text-color: #e6edf3;
+    --muted-label-color: #7d8590;
+    --high-color: #f47067;
+    --medium-color: #e3b341;
+    --low-color: #79b8ff;
+}
+
 html {
     box-sizing: border-box;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
 }
 
 *,
@@ -10,10 +28,65 @@ html {
     margin: 0;
 }
 
-html {
-    -moz-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-mono);
+    color: var(--primary-text-color);
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+#sidebar {
+    width: 240px;
+    border-right: 1px solid var(--border-color);
+    padding: 1rem 1.5rem;
+}
+
+#sidebar-title {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    padding-bottom: 1rem;
+}
+
+.sidebar-project {
+    font-size: 1.2rem;
+    color: var(--primary-text-color);
+}
+
+#info {
+    flex: 1;
+    padding: 1rem 1.5rem; 
+}
+
+#info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#info-title {
+    font-size: 2rem;
+}
+
+.add {
+    color: var(--primary-text-color);
+    background-color: var(--title-color);
+    font-size: 1.2rem;
+    padding: .75rem 1.5rem;
+    border: none;
+    border-radius: .25rem;
+}
+
+.subtext {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 1rem;
+    color: var(--muted-label-color);
+    margin-bottom: 1.5rem;
 }
 
 ul[role='list'],
