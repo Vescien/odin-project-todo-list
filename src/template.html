@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO</title>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <button class="add">ADD</button>
+    <label for="priority">Priority:</label>
+    <select id="priority" name="priority">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+    </select>
+    <label for="datepicker">Choose a date:</label>
+    <input type="date" id="datepicker" name="trip-start">
 </body>
 </html>
