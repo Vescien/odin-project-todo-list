@@ -11,10 +11,22 @@
         <div id="sidebar">
             <h1 id="sidebar-title">>todo.odin</h1>
             <div class="subtext">~/home
-                <p class="sidebar-project">all</p>
-                <p class="sidebar-project">today</p>
-                <p class="sidebar-project">next 7 days</p>
-                <p class="sidebar-project">important</p>
+                <button class="sidebar-project" data-view="upcoming">
+                    <span class="name">all</span>
+                    <span class="count">9</span>
+                </button>
+                <button class="sidebar-project" data-view="upcoming">
+                    <span class="name">today</span>
+                    <span class="count">9</span>
+                </button>
+                <button class="sidebar-project" data-view="upcoming">
+                    <span class="name">next 7 days</span>
+                    <span class="count">9</span>
+                </button>
+                <button class="sidebar-project" data-view="upcoming">
+                    <span class="name">important</span>
+                    <span class="count">9</span>
+                </button>
             </div>
             
             <div class="subtext">~/projects
@@ -32,16 +44,7 @@
             
         </div>
     </div>
-    
 
-    <!-- <button class="add">ADD</button>
-    <label for="priority">Priority:</label>
-    <select id="priority" name="priority">
-        <option value="low">Low</option>
-        <option value="medium" selected>Medium</option>
-        <option value="high">High</option>
-    </select>
-    <label for="datepicker">Choose a date:</label>
-    <input type="date" id="datepicker" name="trip-start"> -->
+    
 </body>
 </html>

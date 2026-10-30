@@ -52,8 +52,14 @@ body {
 }
 
 .sidebar-project {
+    display: flex;
+    justify-content: space-between;
     font-size: 1.2rem;
     color: var(--primary-text-color);
+}
+
+.count {
+    color: var(--muted-label-color);
 }
 
 #info {
@@ -87,6 +93,12 @@ body {
     font-size: 1rem;
     color: var(--muted-label-color);
     margin-bottom: 1.5rem;
+}
+
+button {
+    text-align: left;
+    background-color: var(--bg-color);
+    border: none;cursor: pointer;
 }
 
 ul[role='list'],
