@@ -11,27 +11,26 @@
         <div id="sidebar">
             <h1 id="sidebar-title">>todo.odin</h1>
             <div class="subtext">~/home
-                <button class="sidebar-project" data-view="upcoming">
+                <button class="sidebar-project" data-view="all">
                     <span class="name">all</span>
-                    <span class="count">9</span>
+                    <span class="count"></span>
                 </button>
-                <button class="sidebar-project" data-view="upcoming">
+                <button class="sidebar-project" data-view="today">
                     <span class="name">today</span>
-                    <span class="count">9</span>
+                    <span class="count"></span>
                 </button>
-                <button class="sidebar-project" data-view="upcoming">
+                <button class="sidebar-project" data-view="next-7-days">
                     <span class="name">next 7 days</span>
-                    <span class="count">9</span>
+                    <span class="count"></span>
                 </button>
-                <button class="sidebar-project" data-view="upcoming">
+                <button class="sidebar-project" data-view="important">
                     <span class="name">important</span>
-                    <span class="count">9</span>
+                    <span class="count"></span>
                 </button>
             </div>
             
             <div class="subtext">~/projects
-                <p class="sidebar-project">hello</p>
-                <p class="sidebar-project">world</p>
+                
             </div>
             
         </div>
@@ -45,6 +44,67 @@
         </div>
     </div>
 
+    <dialog id="add-dialog">
+        <form id="add-form" method="dialog" class="todo-form">
+            <h2 class="form-title">new todo</h2>
     
+            <div class="field">
+                <label for="title">title</label>
+                <input id="title" name="title" type="text" placeholder="what needs doing?" required>
+            </div>
+    
+            <div class="field">
+                <label for="description">description</label>
+                <textarea id="description" name="description" rows="3" placeholder="optional details"></textarea>
+            </div>
+    
+            <div class="row">
+                <div class="field">
+                    <label for="due">due</label>
+                    <input id="due" name="due" type="date">
+                </div>
+    
+                <fieldset class="field priority-group">
+                    <legend>priority</legend>
+    
+                    <label class="pri low">
+                        <input type="radio" name="priority" value="low">
+                        <span>Low</span>
+                    </label>
+                    <label class="pri mid">
+                        <input type="radio" name="priority" value="medium" checked>
+                        <span>Mid</span>
+                    </label>
+                    <label class="pri high">
+                        <input type="radio" name="priority" value="high">
+                        <span>High</span>
+                    </label>
+                </fieldset>
+    
+                <div class="field">
+                    <label for="project">project</label>
+                    <select id="project" name="project">
+                        <option value="inbox" selected>inbox</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="field">
+                <label for="notes">notes</label>
+                <textarea id="notes" name="notes" rows="2" placeholder="optional notes"></textarea>
+            </div>
+
+            <label class="completed">
+                <input type="checkbox" name="completed">
+                <span>completed?</span>
+            </label>
+    
+            <div class="actions">
+                <button type="button" id="cancel" class="btn-cancel">Cancel</button>
+                <button type="submit" class="btn-create">Create todo</button>
+            </div>
+        </form>
+    </dialog>
+
 </body>
 </html>
